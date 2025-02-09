@@ -216,6 +216,7 @@ OFFICIAL_MODEL_NAMES = [
     "Qwen/Qwen2.5-0.5B",
     "Qwen/Qwen2.5-0.5B-Instruct",
     "Qwen/Qwen2.5-1.5B",
+    "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
     "Qwen/Qwen2.5-1.5B-Instruct",
     "Qwen/Qwen2.5-3B",
     "Qwen/Qwen2.5-3B-Instruct",
@@ -654,6 +655,11 @@ MODEL_ALIASES = {
     "Qwen/Qwen1.5-7B-Chat": ["qwen1.5-7b-chat"],
     "Qwen/Qwen1.5-14B": ["qwen1.5-14b"],
     "Qwen/Qwen1.5-14B-Chat": ["qwen1.5-14b-chat"],
+    "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B": [
+        "deepseek-1.5b",
+        "deepseek-distill-qwen",
+        "qwen2.5-1.5b"  # Reuse Qwen2.5's config
+    ],
     "microsoft/phi-1": ["phi-1"],
     "microsoft/phi-1_5": ["phi-1_5"],
     "microsoft/phi-2": ["phi-2"],
@@ -685,6 +691,7 @@ NON_HF_HOSTED_MODEL_NAMES = [
     "llama-13b-hf",
     "llama-30b-hf",
     "llama-65b-hf",
+    "deepseek-ai/DeepSeek-R1",
 ]
 """Official model names for models not hosted on HuggingFace."""
 
